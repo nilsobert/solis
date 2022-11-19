@@ -27,6 +27,7 @@ userDataTemplate = {
             "pellet_heating": "T/F",
             "pump_heating": "T/F",
             "floor_heating":"T/F",
+            "yearOfConstruction": "year",
             "pump_type": "None/air/air-water/earth/groundwater"
         }
     }
