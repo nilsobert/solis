@@ -56,7 +56,7 @@ def heatPumpCalculation(key):
 if __name__ == '__main__':
     print(f"User data:  {userData}")
     print(f"Global data:  {globalData}")
-    heatPumpCalculation("1a2b3c4d5e6f70")
+    heatPumpCalculation("hikdrgt504t0a9r65jti")
     app.run()
 
     
