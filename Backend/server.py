@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, request, jsonify
 from data import userData, globalData, saveGlobalData, saveUserData
 from roof import charRoof
 import atexit
@@ -21,9 +21,13 @@ atexit.register(saveData)
 
 app.debug = True
 
-@app.route('/getRoof')
+@app.route('/getRoof', methods=["POST"])
 def getRoof():
-    return ""
+    cont = request.get_json(force=True)
+    lat = cont["lat"]
+    lon = cont["lon"]
+    data = charRoof(lon=lon, lat=lat)
+    return jsonify({"area": data["area"], "savings": data["savings"]})
 
 @app.route("/getFriendData")
 def getFriendData():
@@ -39,8 +43,8 @@ def updateUserData():
 
 
 if __name__ == '__main__':
-    print(f"User data:  {userData}")
-    print(f"Global data:  {globalData}")
+    #print(f"User data:  {userData}")
+    #print(f"Global data:  {globalData}")
     app.run()
     
     
