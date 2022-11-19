@@ -44,19 +44,62 @@ def heatPumpCalculation(key):
         j = json.load(f)
         j = dict(j)
         j = j.get(key)
-        area = j.get("home").get("area")
-        yearOfConstruction = j.get("home").get("yearOfConstruction")
+        surplus = j.get("surplus")
+        print("JSON string = ", surplus, j)
+        print()
+        j = j.get("home")
+        area = j.get("area")
+        yearOfConstruction = j.get("yearOfConstruction")
+        floorHeating = j.get("floor_heating")
+        glass = j.get("glass")
+        print("Construction year = ",yearOfConstruction," floorHeating = ",floorHeating," surplus = ",surplus," glass = ",glass,j)
+        print()
+        recommendation = 0
         if yearOfConstruction >= 1978:
-
-            return "A heatpump is definetly a good idea!"
-    print("JSON string = ",area,yearOfConstruction)
-    print()
-    return""
+            if floorHeating:
+                if glass == "triple":
+                    if surplus:
+                        recommendation = 1
+                    else:
+                        recommendation = 2
+                elif glass == "double":
+                    if surplus:
+                        recommendation = 2
+                    else:
+                        recommendation = 3
+                else:
+                    recommendation = 4
+            else:
+                if glass == "triple":
+                    if surplus:
+                        recommendation = 2
+                    else:
+                        recommendation = 3
+                elif glass == "double":
+                    if surplus:
+                        recommendation = 3
+                    else:
+                        recommendation = 4
+                else:
+                    recommendation = 4
+        else:
+            recommendation = 4
+    if recommendation==1:
+        if area>130:
+            recommendation =12
+    if recommendation==2:
+        if area > 130:
+            recommendation = 22
+    return recommendation
 
 if __name__ == '__main__':
-    print(f"User data:  {userData}")
-    print(f"Global data:  {globalData}")
-    heatPumpCalculation("hikdrgt504t0a9r65jti")
+    ##print(f"User data:  {userData}")
+    ##print(f"Global data:  {globalData}")
+    ##print(heatPumpCalculation("hj4g56e07v94dkn8ctf5"))
+    ##print(heatPumpCalculation("emyaqeix1h130r7xkp6z"))
+    ##print(heatPumpCalculation("79uh2udkinyg60zcgtku"))
+    ##print(heatPumpCalculation("9vqvesrg8gjv3tj9aeqs"))
+    ##print(heatPumpCalculation("fj3g5zws13lt2ms6kllw"))
     app.run()
 
     
