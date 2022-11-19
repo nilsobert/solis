@@ -45,11 +45,11 @@ def getGlobalData():
 
 @app.route("/getUserData")
 def getUserData():
-    return jsonify({
-    "electricity": [["month1", 10], ["month2", 14], ["month3", 13], ["month4", 20], ["month5", 3], ["month6", 8]],
-    "heating": [["month1", 3], ["month2", 11], ["month3", 63], ["month4", 4], ["month5", 1], ["month6", 12]],
-    "saved": [["month1", 10], ["month2", 1], ["month3", 3], ["month4", 10], ["month5", 3], ["month6", 8]]
-})
+    content = request.json()
+    uid = content["uid"]
+    user = userData["uid"]
+    data = user["monthly"]
+    return jsonify(data)
 
 def heatPumpCalculation(key):
     with open("userData.json", "r") as f:
