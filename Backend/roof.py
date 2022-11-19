@@ -78,7 +78,8 @@ def charRoof(lon, lat):
     if ar >200:
         zoom = 18
         ar = main()
-    return ar *0.95
+    save = 5
+    return {"area": ar *0.95, "savings":save}
     
     #print(img)
 
