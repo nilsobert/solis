@@ -1,6 +1,5 @@
 import json
-
-from flask import Flask, render_template
+from flask import Flask, jsonify
 from data import userData, globalData, saveGlobalData, saveUserData
 from roof import charRoof
 import atexit
@@ -23,21 +22,34 @@ atexit.register(saveData)
 
 app.debug = True
 
-@app.route('/getRoof')
+@app.route('/getRoof', method=["POST"])
 def getRoof():
-    return ""
+    content = request.json()
+    lon = content["lon"]
+    lat = content["lat"]
+    data = charRoof(lon=lon, lat=lat)
+    return jsonify({"area":data["area"], "save":data["save"]})
 
 @app.route("/getFriendData")
 def getFriendData():
+    content = request.json()
+    uid = content["uid"]
+    user = userData["uid"]
+    friends_uid = user["friends"]
+    
     return ""
 
 @app.route("/getGlobalData")
 def getGlobalData():
     return ""
 
-@app.route("/updateUserData")
-def updateUserData():
-    return ""
+@app.route("/getUserData")
+def getUserData():
+    return jsonify({
+    "electricity": [["month1", 10], ["month2", 14], ["month3", 13], ["month4", 20], ["month5", 3], ["month6", 8]],
+    "heating": [["month1", 3], ["month2", 11], ["month3", 63], ["month4", 4], ["month5", 1], ["month6", 12]],
+    "saved": [["month1", 10], ["month2", 1], ["month3", 3], ["month4", 10], ["month5", 3], ["month6", 8]]
+})
 
 def heatPumpCalculation(key):
     with open("userData.json", "r") as f:

@@ -2,6 +2,7 @@ import requests
 from PIL import Image
 import numpy as np
 import io
+import math
 import cv2
 
 token = "sk.eyJ1Ijoibmlsc29iZXJ0IiwiYSI6ImNsYW45bGJsZDA2ZjczcG1qeDZjdjkweWkifQ.X5kTjVXsWXK8W9ThcprmTw"
@@ -78,7 +79,7 @@ def charRoof(lon, lat):
     if ar >200:
         zoom = 18
         ar = main()
-    save = 5
+    save = 0.302* math.cos(lat/180*math.pi)*0.50*ar
     return {"area": ar *0.95, "savings":save}
     
     #print(img)
