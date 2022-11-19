@@ -1,0 +1,278 @@
+{
+  "1a2b3c4d5e6f70": {
+    "friends": [],
+    "energyConsumption": [],
+    "energySavings": [],
+    "home": {
+      "yearOfConstruction": 1990,
+      "area": 130,
+      "solar": {
+        "installed": false,
+        "produced": 0
+      },
+      "heatpump": {
+        "air": false,
+        "airWater": false,
+        "earth": false,
+        "ground": false
+      },
+      "gas": false,
+      "oil": false,
+      "pellets": false,
+      "floorHeating": false
+    }
+  },
+  "1a2b3c4d5e6f71": {
+    "friends": [],
+    "energyConsumptionHeating": 8.7,
+    "energySavings": 0,
+    "home": {
+      "yearOfConstruction": 1990,
+      "area": 130,
+      "solar": {
+        "installed": false,
+        "produced": 0
+      },
+      "heatpump": {
+        "air": false,
+        "airWater": false,
+        "earth": false,
+        "ground": false
+      },
+      "gas": false,
+      "oil": false,
+      "pellets": false,
+      "floorHeating": false
+    }
+  },
+  "1a2b3c4d5e6f72": {
+    "friends": [],
+    "energyConsumptionHeating": 8.7,
+    "energySavings": 0,
+    "home": {
+      "yearOfConstruction": 1990,
+      "area": 130,
+      "solar": {
+        "installed": false,
+        "produced": 0
+      },
+      "heatpump": {
+        "air": false,
+        "airWater": false,
+        "earth": false,
+        "ground": false
+      },
+      "gas": false,
+      "oil": false,
+      "pellets": false,
+      "floorHeating": false
+    }
+  },
+  "1a2b3c4d5e6f73": {
+    "friends": [],
+    "energyConsumptionHeating": 8.7,
+    "energySavings": 0,
+    "home": {
+      "yearOfConstruction": 1990,
+      "area": 130,
+      "solar": {
+        "installed": false,
+        "produced": 0
+      },
+      "heatpump": {
+        "air": false,
+        "airWater": false,
+        "earth": false,
+        "ground": false
+      },
+      "gas": false,
+      "oil": false,
+      "pellets": false,
+      "floorHeating": false
+    },
+    "1a2b3c4d5e6f74": {
+      "friends": [],
+      "energyConsumptionHeating": 8.7,
+      "energySavings": 0,
+      "home": {
+        "yearOfConstruction": 1990,
+        "area": 130,
+        "solar": {
+          "installed": false,
+          "produced": 0
+        },
+        "heatpump": {
+          "air": false,
+          "airWater": false,
+          "earth": false,
+          "ground": false
+        },
+        "gas": false,
+        "oil": false,
+        "pellets": false,
+        "floorHeating": false
+      }
+    },
+    "1a2b3c4d5e6f75": {
+      "friends": [],
+      "energyConsumptionHeating": 8.7,
+      "energySavings": 0,
+      "home": {
+        "yearOfConstruction": 1990,
+        "area": 130,
+        "solar": {
+          "installed": false,
+          "produced": 0
+        },
+        "heatpump": {
+          "air": false,
+          "airWater": false,
+          "earth": false,
+          "ground": false
+        },
+        "gas": false,
+        "oil": false,
+        "pellets": false,
+        "floorHeating": false
+      }
+    },
+    "1a2b3c4d5e6f76": {
+      "friends": [],
+      "energyConsumptionHeating": 8.7,
+      "energySavings": 0,
+      "home": {
+        "yearOfConstruction": 1990,
+        "area": 130,
+        "solar": {
+          "installed": false,
+          "produced": 0
+        },
+        "heatpump": {
+          "air": false,
+          "airWater": false,
+          "earth": false,
+          "ground": false
+        },
+        "gas": false,
+        "oil": false,
+        "pellets": false,
+        "floorHeating": false
+      }
+    },
+    "1a2b3c4d5e6f77": {
+      "friends": [],
+      "energyConsumptionHeating": 8.7,
+      "energySavings": 0,
+      "home": {
+        "yearOfConstruction": 1990,
+        "area": 130,
+        "solar": {
+          "installed": false,
+          "produced": 0
+        },
+        "heatpump": {
+          "air": false,
+          "airWater": false,
+          "earth": false,
+          "ground": false
+        },
+        "gas": false,
+        "oil": false,
+        "pellets": false,
+        "floorHeating": false
+      }
+    },
+    "1a2b3c4d5e6f78": {
+      "friends": [],
+      "energyConsumptionHeating": 8.7,
+      "energySavings": 0,
+      "home": {
+        "yearOfConstruction": 1990,
+        "area": 130,
+        "solar": {
+          "installed": false,
+          "produced": 0
+        },
+        "heatpump": {
+          "air": false,
+          "airWater": false,
+          "earth": false,
+          "ground": false
+        },
+        "gas": false,
+        "oil": false,
+        "pellets": false,
+        "floorHeating": false
+      }
+    },
+    "1a2b3c4d5e6f79": {
+      "friends": [],
+      "energyConsumptionHeating": 8.7,
+      "energySavings": 0,
+      "home": {
+        "yearOfConstruction": 1990,
+        "area": 130,
+        "solar": {
+          "installed": false,
+          "produced": 0
+        },
+        "heatpump": {
+          "air": false,
+          "airWater": false,
+          "earth": false,
+          "ground": false
+        },
+        "gas": false,
+        "oil": false,
+        "pellets": false,
+        "floorHeating": false
+      }
+    },
+    "1a2b3c4d5e6f80": {
+      "friends": [],
+      "energyConsumptionHeating": 8.7,
+      "energySavings": 0,
+      "home": {
+        "yearOfConstruction": 1990,
+        "area": 130,
+        "solar": {
+          "installed": false,
+          "produced": 0
+        },
+        "heatpump": {
+          "air": false,
+          "airWater": false,
+          "earth": false,
+          "ground": false
+        },
+        "gas": false,
+        "oil": false,
+        "pellets": false,
+        "floorHeating": false
+      }
+    },
+    "1a2b3c4d5e6f81": {
+      "friends": [],
+      "energyConsumptionHeating": 8.7,
+      "energySavings": 0,
+      "home": {
+        "yearOfConstruction": 1990,
+        "area": 130,
+        "solar": {
+          "installed": false,
+          "produced": 0
+        },
+        "heatpump": {
+          "air": false,
+          "airWater": false,
+          "earth": false,
+          "ground": false
+        },
+        "gas": false,
+        "oil": false,
+        "pellets": false,
+        "floorHeating": false
+      }
+    }
+  }
+}
