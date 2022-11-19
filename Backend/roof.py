@@ -9,14 +9,14 @@ token = "sk.eyJ1Ijoibmlsc29iZXJ0IiwiYSI6ImNsYW45bGJsZDA2ZjczcG1qeDZjdjkweWkifQ.X
 def getAreaMult(lat, zoom):
     lat = abs(lat)
     if lat < 20:
-        return 0.075 if zoom == 19 else 0.149
+        return (0.149*(20-lat) + 0.14*(lat))/20 if zoom == 19 else (0.299*(20-lat) + 0.281*(lat))/20
     if lat < 40:
-        return 0.070 if zoom == 19 else 0.14
+        return (0.14*(40-lat) + 0.114*(abs(lat-20)))/20 if zoom == 19 else (0.281*(40-lat) + 0.229*(abs(lat-20)))/20
     if lat < 60:
-        return 0.057 if zoom == 19 else 0.114
+        return (0.114*(60-lat) + 0.075*(abs(lat-40)))/20 if zoom == 19 else (0.229*(60-lat) + 0.149*(abs(lat-40)))/20
     if lat < 80:
-        return 0.037 if zoom == 19 else 0.075
-    return 0.013 if zoom == 19 else 0.026
+        return (0.075*(80-lat) + 0.026*(abs(lat-60)))/20 if zoom == 19 else (0.149*(80-lat) + 0.052*(abs(lat-60)))/20
+    return 0.026 if zoom == 19 else 0.052
 
 def getImage(map_style, lon, lat, zoom, resolutionX, resolutionY):
     mapbox_url = f"https://api.mapbox.com/styles/v1/mapbox/{map_style}/static/{lon},{lat},{zoom}/{resolutionX}x{resolutionY}?access_token={token}"
@@ -29,7 +29,7 @@ def getImage(map_style, lon, lat, zoom, resolutionX, resolutionY):
     return img
 
 
-def char_roof(lon, lat):
+def charRoof(lon, lat):
     X, Y = 512,512
     zoom = 19
     def main():
@@ -60,6 +60,12 @@ def char_roof(lon, lat):
             sq.append(o[br[0]][br[1]+a])
         num = int(max(set(sq), key = sq.count))
         flat = list(o.flatten())
+        #fl = [0 if f != num else 255 for f in flat]
+        #fl = np.array(fl)
+        #fl = fl.reshape((512,512))
+        #print(255 in fl.flatten())
+        #fl = Image.fromarray(fl)
+        #fl.show()
         pixels = flat.count(num)
         if __name__ == "__main__":
             cv2.imshow("",img)
@@ -72,12 +78,12 @@ def char_roof(lon, lat):
     if ar >200:
         zoom = 18
         ar = main()
-    return ar
+    return ar *0.95
     
     #print(img)
 
 if __name__ == "__main__":
-    lon = 12.118614543081447
-    lat = 48.55181220062855
-    area = char_roof(lon, lat)  
+    lon = 12.118771450982782
+    lat = 48.55183459616669
+    area = charRoof(lon, lat)  
     print(area)
