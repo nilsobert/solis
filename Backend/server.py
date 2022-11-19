@@ -22,7 +22,7 @@ atexit.register(saveData)
 
 app.debug = True
 
-@app.route('/getRoof', method=["POST"])
+@app.route('/getRoof', methods=["POST"])
 def getRoof():
     content = request.json()
     lon = content["lon"]
@@ -30,7 +30,7 @@ def getRoof():
     data = charRoof(lon=lon, lat=lat)
     return jsonify({"area":data["area"], "save":data["save"]})
 
-@app.route("/getFriendData")
+@app.route("/getFriendData", methods=["POST"])
 def getFriendData():
     content = request.json()
     uid = content["uid"]
@@ -39,11 +39,11 @@ def getFriendData():
     
     return ""
 
-@app.route("/getGlobalData")
+@app.route("/getGlobalData", methods=["POST"])
 def getGlobalData():
     return ""
 
-@app.route("/getUserData")
+@app.route("/getUserData", methods=["POST"])
 def getUserData():
     content = request.json()
     uid = content["uid"]
