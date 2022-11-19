@@ -7,15 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		178DB41CDCCF3669163C13D4 /* Pods_Solis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847335DC3D36829C8588C160 /* Pods_Solis.framework */; };
+		B9063C952928FAB900227181 /* InsertoptionChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9063C942928FAB900227181 /* InsertoptionChooserViewController.swift */; };
+		B9063C97292924B000227181 /* QuestionsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9063C96292924B000227181 /* QuestionsCollectionViewCell.swift */; };
+		B9063C992929387400227181 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9063C982929387300227181 /* HomeService.swift */; };
 		B95E2D18292822DD00EEA52D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95E2D17292822DD00EEA52D /* AppDelegate.swift */; };
 		B95E2D1A292822DD00EEA52D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95E2D19292822DD00EEA52D /* SceneDelegate.swift */; };
-		B95E2D1C292822DD00EEA52D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95E2D1B292822DD00EEA52D /* ViewController.swift */; };
+		B95E2D1C292822DD00EEA52D /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95E2D1B292822DD00EEA52D /* DashboardViewController.swift */; };
 		B95E2D1F292822DD00EEA52D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B95E2D1D292822DD00EEA52D /* Main.storyboard */; };
 		B95E2D21292822E000EEA52D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B95E2D20292822E000EEA52D /* Assets.xcassets */; };
 		B95E2D24292822E000EEA52D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B95E2D22292822E000EEA52D /* LaunchScreen.storyboard */; };
 		B95E2D2F292822E000EEA52D /* SolisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95E2D2E292822E000EEA52D /* SolisTests.swift */; };
 		B95E2D39292822E000EEA52D /* SolisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95E2D38292822E000EEA52D /* SolisUITests.swift */; };
 		B95E2D3B292822E000EEA52D /* SolisUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95E2D3A292822E000EEA52D /* SolisUITestsLaunchTests.swift */; };
+		B95E2D4A2928282200EEA52D /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95E2D492928282200EEA52D /* CalculatorViewController.swift */; };
+		B95E2D4C2928283000EEA52D /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95E2D4B2928283000EEA52D /* DataViewController.swift */; };
+		B95E2D5329282E1C00EEA52D /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95E2D5229282E1C00EEA52D /* DashboardTableViewCell.swift */; };
+		B95E2D55292855FF00EEA52D /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95E2D54292855FF00EEA52D /* CustomTabBarController.swift */; };
+		B95E2D572928742000EEA52D /* AutarchicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95E2D562928741F00EEA52D /* AutarchicViewController.swift */; };
+		B95E2D5B2928C86700EEA52D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95E2D5A2928C86700EEA52D /* NetworkService.swift */; };
+		B95E2D5D2928CB1100EEA52D /* CalculatorChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95E2D5C2928CB1100EEA52D /* CalculatorChooserViewController.swift */; };
+		E4489A237EF880647F4D0466 /* Pods_Solis_SolisUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CFA200DFDB7994747AE533 /* Pods_Solis_SolisUITests.framework */; };
+		FEFBB2EE262DEB1634945B88 /* Pods_SolisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE78A5C3F1E55DC1B52B688 /* Pods_SolisTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +49,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01C6AFE83ADF5B24C91044DF /* Pods-SolisTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolisTests.release.xcconfig"; path = "Target Support Files/Pods-SolisTests/Pods-SolisTests.release.xcconfig"; sourceTree = "<group>"; };
+		359B1DFD00E7C66EA4B0B968 /* Pods-Solis-SolisUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Solis-SolisUITests.release.xcconfig"; path = "Target Support Files/Pods-Solis-SolisUITests/Pods-Solis-SolisUITests.release.xcconfig"; sourceTree = "<group>"; };
+		55CFA200DFDB7994747AE533 /* Pods_Solis_SolisUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Solis_SolisUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		847335DC3D36829C8588C160 /* Pods_Solis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Solis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F25186419CEEC46B4F58BE6 /* Pods-Solis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Solis.release.xcconfig"; path = "Target Support Files/Pods-Solis/Pods-Solis.release.xcconfig"; sourceTree = "<group>"; };
+		9122C3B61F7738F2238AB5B6 /* Pods-SolisTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolisTests.debug.xcconfig"; path = "Target Support Files/Pods-SolisTests/Pods-SolisTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B9063C942928FAB900227181 /* InsertoptionChooserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertoptionChooserViewController.swift; sourceTree = "<group>"; };
+		B9063C96292924B000227181 /* QuestionsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsCollectionViewCell.swift; sourceTree = "<group>"; };
+		B9063C982929387300227181 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 		B95E2D14292822DD00EEA52D /* Solis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Solis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B95E2D17292822DD00EEA52D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B95E2D19292822DD00EEA52D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B95E2D1B292822DD00EEA52D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B95E2D1B292822DD00EEA52D /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		B95E2D1E292822DD00EEA52D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B95E2D20292822E000EEA52D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B95E2D23292822E000EEA52D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +71,16 @@
 		B95E2D34292822E000EEA52D /* SolisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B95E2D38292822E000EEA52D /* SolisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolisUITests.swift; sourceTree = "<group>"; };
 		B95E2D3A292822E000EEA52D /* SolisUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolisUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B95E2D492928282200EEA52D /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		B95E2D4B2928283000EEA52D /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		B95E2D5229282E1C00EEA52D /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
+		B95E2D54292855FF00EEA52D /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		B95E2D562928741F00EEA52D /* AutarchicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutarchicViewController.swift; sourceTree = "<group>"; };
+		B95E2D5A2928C86700EEA52D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B95E2D5C2928CB1100EEA52D /* CalculatorChooserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorChooserViewController.swift; sourceTree = "<group>"; };
+		BBE78A5C3F1E55DC1B52B688 /* Pods_SolisTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SolisTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7D27F9031F77783701AAC18 /* Pods-Solis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Solis.debug.xcconfig"; path = "Target Support Files/Pods-Solis/Pods-Solis.debug.xcconfig"; sourceTree = "<group>"; };
+		F810286C9E56EF2A459DFC86 /* Pods-Solis-SolisUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Solis-SolisUITests.debug.xcconfig"; path = "Target Support Files/Pods-Solis-SolisUITests/Pods-Solis-SolisUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				178DB41CDCCF3669163C13D4 /* Pods_Solis.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEFBB2EE262DEB1634945B88 /* Pods_SolisTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +104,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4489A237EF880647F4D0466 /* Pods_Solis_SolisUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EBF05F396962B93D64C6380 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7D27F9031F77783701AAC18 /* Pods-Solis.debug.xcconfig */,
+				8F25186419CEEC46B4F58BE6 /* Pods-Solis.release.xcconfig */,
+				F810286C9E56EF2A459DFC86 /* Pods-Solis-SolisUITests.debug.xcconfig */,
+				359B1DFD00E7C66EA4B0B968 /* Pods-Solis-SolisUITests.release.xcconfig */,
+				9122C3B61F7738F2238AB5B6 /* Pods-SolisTests.debug.xcconfig */,
+				01C6AFE83ADF5B24C91044DF /* Pods-SolisTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		86F97BCB629308FF6F27D23A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				847335DC3D36829C8588C160 /* Pods_Solis.framework */,
+				55CFA200DFDB7994747AE533 /* Pods_Solis_SolisUITests.framework */,
+				BBE78A5C3F1E55DC1B52B688 /* Pods_SolisTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B95E2D0B292822DD00EEA52D = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +141,8 @@
 				B95E2D2D292822E000EEA52D /* SolisTests */,
 				B95E2D37292822E000EEA52D /* SolisUITests */,
 				B95E2D15292822DD00EEA52D /* Products */,
+				2EBF05F396962B93D64C6380 /* Pods */,
+				86F97BCB629308FF6F27D23A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +159,13 @@
 		B95E2D16292822DD00EEA52D /* Solis */ = {
 			isa = PBXGroup;
 			children = (
+				B95E2D4E29282B8B00EEA52D /* Services */,
+				B95E2D4D29282B7200EEA52D /* Models */,
 				B95E2D17292822DD00EEA52D /* AppDelegate.swift */,
 				B95E2D19292822DD00EEA52D /* SceneDelegate.swift */,
-				B95E2D1B292822DD00EEA52D /* ViewController.swift */,
-				B95E2D1D292822DD00EEA52D /* Main.storyboard */,
+				B95E2D48292826A600EEA52D /* Storyboards */,
+				B95E2D472928269000EEA52D /* ViewControllers */,
 				B95E2D20292822E000EEA52D /* Assets.xcassets */,
-				B95E2D22292822E000EEA52D /* LaunchScreen.storyboard */,
 				B95E2D25292822E000EEA52D /* Info.plist */,
 			);
 			path = Solis;
@@ -127,6 +188,55 @@
 			path = SolisUITests;
 			sourceTree = "<group>";
 		};
+		B95E2D472928269000EEA52D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B95E2D5129282CD600EEA52D /* Components */,
+				B95E2D1B292822DD00EEA52D /* DashboardViewController.swift */,
+				B95E2D492928282200EEA52D /* CalculatorViewController.swift */,
+				B95E2D4B2928283000EEA52D /* DataViewController.swift */,
+				B95E2D54292855FF00EEA52D /* CustomTabBarController.swift */,
+				B95E2D562928741F00EEA52D /* AutarchicViewController.swift */,
+				B95E2D5C2928CB1100EEA52D /* CalculatorChooserViewController.swift */,
+				B9063C942928FAB900227181 /* InsertoptionChooserViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B95E2D48292826A600EEA52D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B95E2D1D292822DD00EEA52D /* Main.storyboard */,
+				B95E2D22292822E000EEA52D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B95E2D4D29282B7200EEA52D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B95E2D4E29282B8B00EEA52D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B95E2D5A2928C86700EEA52D /* NetworkService.swift */,
+				B9063C982929387300227181 /* HomeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B95E2D5129282CD600EEA52D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B95E2D5229282E1C00EEA52D /* DashboardTableViewCell.swift */,
+				B9063C96292924B000227181 /* QuestionsCollectionViewCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +244,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B95E2D3E292822E100EEA52D /* Build configuration list for PBXNativeTarget "Solis" */;
 			buildPhases = (
+				A0B23A1B8ACD732DBFD3637F /* [CP] Check Pods Manifest.lock */,
 				B95E2D10292822DD00EEA52D /* Sources */,
 				B95E2D11292822DD00EEA52D /* Frameworks */,
 				B95E2D12292822DD00EEA52D /* Resources */,
+				109E1CD7D7EECFC8B6664B60 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +263,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B95E2D41292822E100EEA52D /* Build configuration list for PBXNativeTarget "SolisTests" */;
 			buildPhases = (
+				A596B49FB9FA231D699ACA01 /* [CP] Check Pods Manifest.lock */,
 				B95E2D26292822E000EEA52D /* Sources */,
 				B95E2D27292822E000EEA52D /* Frameworks */,
 				B95E2D28292822E000EEA52D /* Resources */,
@@ -169,9 +282,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B95E2D44292822E100EEA52D /* Build configuration list for PBXNativeTarget "SolisUITests" */;
 			buildPhases = (
+				DE2A044217D9C3469000612E /* [CP] Check Pods Manifest.lock */,
 				B95E2D30292822E000EEA52D /* Sources */,
 				B95E2D31292822E000EEA52D /* Frameworks */,
 				B95E2D32292822E000EEA52D /* Resources */,
+				AD4AA48C01448FCDC27D458C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +368,127 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		109E1CD7D7EECFC8B6664B60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Solis/Pods-Solis-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Solis/Pods-Solis-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Solis/Pods-Solis-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0B23A1B8ACD732DBFD3637F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Solis-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A596B49FB9FA231D699ACA01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SolisTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD4AA48C01448FCDC27D458C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Solis-SolisUITests/Pods-Solis-SolisUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Solis-SolisUITests/Pods-Solis-SolisUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Solis-SolisUITests/Pods-Solis-SolisUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE2A044217D9C3469000612E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Solis-SolisUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B95E2D10292822DD00EEA52D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B95E2D1C292822DD00EEA52D /* ViewController.swift in Sources */,
+				B95E2D1C292822DD00EEA52D /* DashboardViewController.swift in Sources */,
 				B95E2D18292822DD00EEA52D /* AppDelegate.swift in Sources */,
+				B9063C952928FAB900227181 /* InsertoptionChooserViewController.swift in Sources */,
+				B95E2D4C2928283000EEA52D /* DataViewController.swift in Sources */,
+				B95E2D572928742000EEA52D /* AutarchicViewController.swift in Sources */,
+				B95E2D5B2928C86700EEA52D /* NetworkService.swift in Sources */,
+				B95E2D4A2928282200EEA52D /* CalculatorViewController.swift in Sources */,
+				B95E2D5D2928CB1100EEA52D /* CalculatorChooserViewController.swift in Sources */,
+				B9063C992929387400227181 /* HomeService.swift in Sources */,
+				B95E2D55292855FF00EEA52D /* CustomTabBarController.swift in Sources */,
 				B95E2D1A292822DD00EEA52D /* SceneDelegate.swift in Sources */,
+				B9063C97292924B000227181 /* QuestionsCollectionViewCell.swift in Sources */,
+				B95E2D5329282E1C00EEA52D /* DashboardTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +660,7 @@
 		};
 		B95E2D3F292822E100EEA52D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7D27F9031F77783701AAC18 /* Pods-Solis.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -440,6 +669,7 @@
 				DEVELOPMENT_TEAM = VHFFNQQF74;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Solis/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Solis;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -460,6 +690,7 @@
 		};
 		B95E2D40292822E100EEA52D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F25186419CEEC46B4F58BE6 /* Pods-Solis.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -468,6 +699,7 @@
 				DEVELOPMENT_TEAM = VHFFNQQF74;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Solis/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Solis;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -488,6 +720,7 @@
 		};
 		B95E2D42292822E100EEA52D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9122C3B61F7738F2238AB5B6 /* Pods-SolisTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +741,7 @@
 		};
 		B95E2D43292822E100EEA52D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01C6AFE83ADF5B24C91044DF /* Pods-SolisTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +762,7 @@
 		};
 		B95E2D45292822E100EEA52D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F810286C9E56EF2A459DFC86 /* Pods-Solis-SolisUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +781,7 @@
 		};
 		B95E2D46292822E100EEA52D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 359B1DFD00E7C66EA4B0B968 /* Pods-Solis-SolisUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
