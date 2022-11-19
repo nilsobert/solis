@@ -1,4 +1,6 @@
-from flask import Flask, request, jsonify
+import json
+
+from flask import Flask, render_template
 from data import userData, globalData, saveGlobalData, saveUserData
 from roof import charRoof
 import atexit
@@ -21,13 +23,9 @@ atexit.register(saveData)
 
 app.debug = True
 
-@app.route('/getRoof', methods=["POST"])
+@app.route('/getRoof')
 def getRoof():
-    cont = request.get_json(force=True)
-    lat = cont["lat"]
-    lon = cont["lon"]
-    data = charRoof(lon=lon, lat=lat)
-    return jsonify({"area": data["area"], "savings": data["savings"]})
+    return ""
 
 @app.route("/getFriendData")
 def getFriendData():
@@ -41,10 +39,22 @@ def getGlobalData():
 def updateUserData():
     return ""
 
+def heatPumpCalculation(key):
+    with open("userData.json", "r") as f:
+        j = json.load(f)
+        j = dict(j)
+        j = j.get(key)
+        area = j.get("home").get("area")
+        yearOfConstruction = j.get("home").get("yearOfConstruction")
+        ##if (yearOfConstruction>=2010)
+    print("JSON string = ",area,yearOfConstruction)
+    print()
+    return""
 
 if __name__ == '__main__':
-    #print(f"User data:  {userData}")
-    #print(f"Global data:  {globalData}")
+    print(f"User data:  {userData}")
+    print(f"Global data:  {globalData}")
+    heatPumpCalculation("1a2b3c4d5e6f70")
     app.run()
-    
+
     
