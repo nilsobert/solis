@@ -46,7 +46,9 @@ def heatPumpCalculation(key):
         j = j.get(key)
         area = j.get("home").get("area")
         yearOfConstruction = j.get("home").get("yearOfConstruction")
-        ##if (yearOfConstruction>=2010)
+        if yearOfConstruction >= 1978:
+
+            return "A heatpump is definetly a good idea!"
     print("JSON string = ",area,yearOfConstruction)
     print()
     return""
