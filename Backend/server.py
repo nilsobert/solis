@@ -21,8 +21,8 @@ def getRoof():
     content = request.json
     lon = content["lon"]
     lat = content["lat"]
-    data = charRoof(lon=lon, lat=lat)
-    response = app.response_class(response=json.dumps({"area":str(data["area"]), "savings":str(data["save"])}),
+    data = charRoof(lon=float(lon), lat=float(lat))
+    response = app.response_class(response=json.dumps({"area":str(round(data["area"])), "savings":str(round(data["savings"]*1000))}),
     status=200,
     mimetype='application/json')
     return response
@@ -48,7 +48,7 @@ def getFriendData():
         for n,a in enumerate(dat["monthly"]["saved"]):
             out[n][0] = a[0]
             if out[n][1] != 0:
-                out[n][1] = str(float(a[1])/out[n][1])
+                out[n][1] = str(float(a[1])/out[n][1]*100)
             else:
                 out[n][1] = "0"
         data[dat["name"]] = out
@@ -63,7 +63,7 @@ def getFriendData():
     for n,a in enumerate(datSelf["monthly"]["saved"]):
         outSelf[n][0] = a[0]
         if outSelf[n][1] != 0:
-            outSelf[n][1] = str(float(a[1])/outSelf[n][1])
+            outSelf[n][1] = str(float(a[1])/outSelf[n][1]*100)
         else:
             outSelf[n][1] = "0"
     data["You"] = outSelf
@@ -90,20 +90,32 @@ def getGlobalData():
                 out[a][1].append(float(user["saved"][0][1])/div)
             else:
                 out[a][1].append(0)
-    print(out)
     sort = [[None, []], [None, []], [None, []], [None, []], [None, []], [None, []]]
     for n,a in enumerate(out):
         sort[n][0] = a[0]
         sort[n][1] = sorted(a[1])
     top10, top30, top50 = [[None, 0], [None, 0], [None, 0], [None, 0], [None, 0], [None, 0]],[[None, 0], [None, 0], [None, 0], [None, 0], [None, 0], [None, 0]],[[None, 0], [None, 0], [None, 0], [None, 0], [None, 0], [None, 0]]
-    print(sort)
     for n,a in enumerate(sort):
         top10[n][0] = top30[n][0] = top50[n][0] = a[0]
-        top10[n][1] = str(sum(a[1][-round(0.1*l):])/round(0.1*l))
-        top30[n][1] = str(sum(a[1][-round(0.3*l):])/round(0.3*l))
-        top50[n][1] = str(sum(a[1][-round(0.5*l):])/round(0.5*l))
+        top10[n][1] = str(sum(a[1][-round(0.1*l):])/round(0.1*l)*100)
+        top30[n][1] = str(sum(a[1][-round(0.3*l):])/round(0.3*l)*100)
+        top50[n][1] = str(sum(a[1][-round(0.5*l):])/round(0.5*l)*100)
     data2 = {"Top 10":top10, "Top 30":top30, "Top 50":top50}
-    print(data2)
+    datSelf = userData[uid]
+    outSelf = [[None, 0], [None, 0], [None, 0], [None, 0], [None, 0], [None, 0]]
+    for n,a in enumerate(datSelf["monthly"]["heating"]):
+        outSelf[n][0] = a[0]
+        outSelf[n][1] += float(a[1])
+    for n,a in enumerate(datSelf["monthly"]["electricity"]):
+        outSelf[n][0] = a[0]
+        outSelf[n][1] += float(a[1])
+    for n,a in enumerate(datSelf["monthly"]["saved"]):
+        outSelf[n][0] = a[0]
+        if outSelf[n][1] != 0:
+            outSelf[n][1] = str(float(a[1])/outSelf[n][1]*100)
+        else:
+            outSelf[n][1] = "0"
+    data2["You"] = outSelf
     response = app.response_class(response=json.dumps(data2),
     status=200,
     mimetype='application/json')
@@ -146,16 +158,23 @@ def getUserData():
 @app.route("/heatPumpRecomendation", methods=["POST"])
 def heatPumpRecomendation():
     content = request.json
+    uid = content["uid"]
     trans = {
-        1:"Nice",
-        2:"Acceptable",
-        3:":|",
-        4:"U serious?",
-        12:"(O_O)",
-        22:"(x_x)"
+        1:"A heatpump is perfect for you!",
+        2:"A heatpump is definetly worth a shot!",
+        3:"A heatpump might not be the best option for you.1",
+        4:"A heatpump is not recommendable for your situation. You should think about investing your money in more insulation for your building.",
+        12:"A heatpump is perfect for you, you might also consider geo-thermal or ground water heat pumps.",
+        22:"A heatpump is definetly worth a shot, you might also consider geo-thermal or ground water heat pumps."
     }
-    
-    return ""
+    userData[uid]["home"]["glass"] = content["glass"]
+    userData[uid]["home"]["yearOfConstruction"] = content["year"]
+    userData[uid]["home"]["floor_heating"] = content["floor_heating"]
+    userData[uid]["solar"]["surplus"] = content["surplus"]
+    response = app.response_class(response=json.dumps({"evaluation":trans[heatPumpCalculation(uid)]}),
+    status=200,
+    mimetype='application/json')
+    return response
 
 def heatPumpCalculation(key):
     
@@ -163,7 +182,7 @@ def heatPumpCalculation(key):
         j = json.load(f)
         j = dict(j)
         j = j.get(key)
-        surplus = j.get("surplus")
+        surplus = j["solar"].get("surplus")
         j = j.get("home")
         area = j.get("area")
         yearOfConstruction = j.get("yearOfConstruction")
