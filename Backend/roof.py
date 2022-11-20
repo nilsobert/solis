@@ -7,16 +7,19 @@ import cv2
 
 token = "sk.eyJ1Ijoibmlsc29iZXJ0IiwiYSI6ImNsYW45bGJsZDA2ZjczcG1qeDZjdjkweWkifQ.X5kTjVXsWXK8W9ThcprmTw"
 
+def interoplate(x1, x2, f1, f2, val):
+    return (f1*(x1-val) + f2*(val-x2))/(abs(x1-x2))
+
 def getAreaMult(lat, zoom):
     lat = abs(lat)
     if lat < 20:
-        return (0.149*(20-lat) + 0.14*(lat))/20 if zoom == 19 else (0.299*(20-lat) + 0.281*(lat))/20
+        return interoplate(20,0,0.149,0.14,lat) if zoom == 19 else interoplate(20,0,0.299,0.281,lat)
     if lat < 40:
-        return (0.14*(40-lat) + 0.114*(abs(lat-20)))/20 if zoom == 19 else (0.281*(40-lat) + 0.229*(abs(lat-20)))/20
+        return interoplate(40,20,0.14,0.114,lat) if zoom == 19 else interoplate(40,20,0.281,0.229,lat)
     if lat < 60:
-        return (0.114*(60-lat) + 0.075*(abs(lat-40)))/20 if zoom == 19 else (0.229*(60-lat) + 0.149*(abs(lat-40)))/20
+        return interoplate(60,40,0.114,0.075,lat) if zoom == 19 else interoplate(60,40,0.229,0.149,lat)
     if lat < 80:
-        return (0.075*(80-lat) + 0.026*(abs(lat-60)))/20 if zoom == 19 else (0.149*(80-lat) + 0.052*(abs(lat-60)))/20
+        return interoplate(80,60,0.075,0.026,lat) if zoom == 19 else interoplate(80,60,0.149,0.052,lat)
     return 0.026 if zoom == 19 else 0.052
 
 def getImage(map_style, lon, lat, zoom, resolutionX, resolutionY):
@@ -85,7 +88,7 @@ def charRoof(lon, lat):
     #print(img)
 
 if __name__ == "__main__":
-    lon = 12.118771450982782
-    lat = 48.55183459616669
+    lon = 11.66808702738366
+    lat = 48.26255391797988
     area = charRoof(lon, lat)  
     print(area)
