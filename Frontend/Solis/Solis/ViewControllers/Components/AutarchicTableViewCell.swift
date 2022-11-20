@@ -1,24 +1,23 @@
 //
-//  DashboardTableViewCell.swift
+//  AutarchicTableViewCell.swift
 //  Solis
 //
-//  Created by Julian Waluschyk on 18.11.22.
+//  Created by Julian Waluschyk on 20.11.22.
 //
 
 import UIKit
 import Charts
 
-class DashboardTableViewCell: UITableViewCell {
+class AutarchicTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var barContentView: UIView!
-    @IBOutlet weak var chartView: BarChartView!
-    
+    @IBOutlet weak var chartContentView: UIView!
+    @IBOutlet weak var chartView: LineChartView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        barContentView.layer.cornerRadius = 30
-        barContentView.layer.masksToBounds = true
+        chartContentView.layer.cornerRadius = 30
+        chartContentView.layer.masksToBounds = true
         
         self.chartView.gridBackgroundColor = UIColor.init(named: "ChartColor")!
         
@@ -37,6 +36,8 @@ class DashboardTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
     }
 
 }

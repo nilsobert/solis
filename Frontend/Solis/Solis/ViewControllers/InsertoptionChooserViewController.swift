@@ -8,7 +8,7 @@
 import UIKit
 
 class InsertoptionChooserViewController: UIViewController {
-
+    
     
     @IBOutlet weak var backView: UIView!
     @IBOutlet weak var consumerView: UIView!
@@ -34,6 +34,12 @@ class InsertoptionChooserViewController: UIViewController {
         let backgroundTap = UITapGestureRecognizer(target: self, action: #selector(self.backgroundTapped(_:)))
         backgroundView.addGestureRecognizer(backgroundTap)
         
+        let producerTap = UITapGestureRecognizer(target: self, action: #selector(self.producerTapped(_:)))
+        producerView.addGestureRecognizer(producerTap)
+        
+        let consumerTap = UITapGestureRecognizer(target: self, action: #selector(self.consumerTapped(_:)))
+        consumerView.addGestureRecognizer(consumerTap)
+        
         setupGestureRecognizers()
     }
     
@@ -51,10 +57,26 @@ class InsertoptionChooserViewController: UIViewController {
         
         self.dismiss(animated: true)
     }
-
+    
+    
     @objc func backgroundTapped(_ sender: UITapGestureRecognizer? = nil) {
         NotificationCenter.default.post(name: Notification.Name("REMOVE_TRANSITIONVIEW"), object: nil)
         self.dismiss(animated: true)
     }
     
+    @objc func producerTapped(_ sender: UITapGestureRecognizer? = nil) {
+        let calculator = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ConsumerCalculatorViewController") as! ConsumerCalculatorViewController
+        calculator.isConsumer = false
+        self.present(calculator, animated: true, completion: nil)
+        
+    }
+
+    @objc func consumerTapped(_ sender: UITapGestureRecognizer? = nil) {
+        
+        let calculator = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ConsumerCalculatorViewController") as! ConsumerCalculatorViewController
+        calculator.isConsumer = true
+        self.present(calculator, animated: true, completion: nil)
+        
+        
+    }
 }

@@ -33,7 +33,7 @@ class CalculatorChooserViewController: UIViewController {
         let solarTap = UITapGestureRecognizer(target: self, action: #selector(self.solarTapped(_:)))
         solarPanelView.addGestureRecognizer(solarTap)
         
-        let heatPumpTap = UITapGestureRecognizer(target: self, action: #selector(self.solarTapped(_:)))
+        let heatPumpTap = UITapGestureRecognizer(target: self, action: #selector(self.heatPumpTapped(_:)))
         heatPumpView.addGestureRecognizer(heatPumpTap)
         
         let backgroundTap = UITapGestureRecognizer(target: self, action: #selector(self.backgroundTapped(_:)))
@@ -49,7 +49,14 @@ class CalculatorChooserViewController: UIViewController {
     }
     
     @objc func solarTapped(_ sender: UITapGestureRecognizer? = nil) {
-        pushCalculator()
+        let calculator = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "solarCalculatorViewController") as! SolarCalculatorViewController
+        self.present(calculator, animated: true, completion: nil)
+        self.tabBarController?.present(calculator, animated: true)
+        
+    }
+    
+    @objc func remove() {
+        self.dismiss(animated: true)
     }
     
     @objc func heatPumpTapped(_ sender: UITapGestureRecognizer? = nil) {
@@ -63,7 +70,9 @@ class CalculatorChooserViewController: UIViewController {
     
     func pushCalculator() {
         let calculator = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "calculatorViewController") as! CalculatorViewController
-        self.present(calculator, animated: true, completion: nil)
+        self.present(calculator, animated: true, completion: {
+            //self.dismiss(animated: true)
+        })
     }
     
     @objc func swipeAction(swipe: UISwipeGestureRecognizer) {

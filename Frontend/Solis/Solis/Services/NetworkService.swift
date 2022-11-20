@@ -10,7 +10,7 @@ import Alamofire
 
 public class NetworkService {
     
-    let TARGET_URL = "http://85.214.225.10:8080/Tony/"
+    let TARGET_URL = "http://85.214.129.142:8079/"
     
 //getRoof send lon lat
 //get area save

@@ -1,14 +1,13 @@
 //
-//  HomeService.swift
+//  AutarchicService.swift
 //  Solis
 //
-//  Created by Julian Waluschyk on 19.11.22.
-//
+//  Created by Julian Waluschyk on 20.11.22.
 //
 
 import Foundation
 
-public class HomeService {
+public class AutarchicService {
     
     let networkService: NetworkService!
     
@@ -16,17 +15,17 @@ public class HomeService {
         self.networkService = NetworkService()
     }
     
-    let HOME_URL: String = "getUserData"
-    let HOME_URL_TOP: String = "getTopUserData"
+    let FRIEND_URL: String = "getFriendData"
+    let GLOBAL_URL: String = "getGlobalData"
     let USER_UID: String = "11111111111111111111"
     
-    func performQuery(completion: @escaping ([String: Any] , Int) -> Void) {
+    func performFriendQuery(completion: @escaping ([String: Any] , Int) -> Void) {
     
         let dataToSend = [
             "uid" : USER_UID
         ] as [String : Any]
         
-        networkService.sendPostRequest(url: HOME_URL, parameters: dataToSend, completion: { (data, state) -> Void in
+        networkService.sendPostRequest(url: FRIEND_URL, parameters: dataToSend, completion: { (data, state) -> Void in
             
             completion(data!, state ?? 0)
             
@@ -34,13 +33,13 @@ public class HomeService {
         
     }
  
-    func performTopQuery(completion: @escaping ([String: Any] , Int) -> Void) {
+    func performGlobalQuery(completion: @escaping ([String: Any] , Int) -> Void) {
     
         let dataToSend = [
             "uid" : USER_UID
         ] as [String : Any]
         
-        networkService.sendPostRequest(url: HOME_URL_TOP, parameters: dataToSend, completion: { (data, state) -> Void in
+        networkService.sendPostRequest(url: GLOBAL_URL, parameters: dataToSend, completion: { (data, state) -> Void in
             
             completion(data!, state ?? 0)
             

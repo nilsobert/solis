@@ -11,6 +11,8 @@
 		B9063C952928FAB900227181 /* InsertoptionChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9063C942928FAB900227181 /* InsertoptionChooserViewController.swift */; };
 		B9063C97292924B000227181 /* QuestionsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9063C96292924B000227181 /* QuestionsCollectionViewCell.swift */; };
 		B9063C992929387400227181 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9063C982929387300227181 /* HomeService.swift */; };
+		B92F597E292A0F2B000F3696 /* ConsumerCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92F597D292A0F2B000F3696 /* ConsumerCalculatorViewController.swift */; };
+		B92F5980292A136F000F3696 /* ConsumerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92F597F292A136F000F3696 /* ConsumerService.swift */; };
 		B95E2D18292822DD00EEA52D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95E2D17292822DD00EEA52D /* AppDelegate.swift */; };
 		B95E2D1A292822DD00EEA52D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95E2D19292822DD00EEA52D /* SceneDelegate.swift */; };
 		B95E2D1C292822DD00EEA52D /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95E2D1B292822DD00EEA52D /* DashboardViewController.swift */; };
@@ -27,6 +29,10 @@
 		B95E2D572928742000EEA52D /* AutarchicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95E2D562928741F00EEA52D /* AutarchicViewController.swift */; };
 		B95E2D5B2928C86700EEA52D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95E2D5A2928C86700EEA52D /* NetworkService.swift */; };
 		B95E2D5D2928CB1100EEA52D /* CalculatorChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95E2D5C2928CB1100EEA52D /* CalculatorChooserViewController.swift */; };
+		B9888DFF292997910054BED7 /* AutarchicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9888DFE292997910054BED7 /* AutarchicService.swift */; };
+		B9888E022929D3E00054BED7 /* AutarchicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9888E012929D3DF0054BED7 /* AutarchicTableViewCell.swift */; };
+		B9888E042929E00B0054BED7 /* SolarCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9888E032929E00B0054BED7 /* SolarCalculatorViewController.swift */; };
+		B9888E062929ECA40054BED7 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9888E052929ECA30054BED7 /* LocationService.swift */; };
 		E4489A237EF880647F4D0466 /* Pods_Solis_SolisUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CFA200DFDB7994747AE533 /* Pods_Solis_SolisUITests.framework */; };
 		FEFBB2EE262DEB1634945B88 /* Pods_SolisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE78A5C3F1E55DC1B52B688 /* Pods_SolisTests.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +64,8 @@
 		B9063C942928FAB900227181 /* InsertoptionChooserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertoptionChooserViewController.swift; sourceTree = "<group>"; };
 		B9063C96292924B000227181 /* QuestionsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsCollectionViewCell.swift; sourceTree = "<group>"; };
 		B9063C982929387300227181 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		B92F597D292A0F2B000F3696 /* ConsumerCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumerCalculatorViewController.swift; sourceTree = "<group>"; };
+		B92F597F292A136F000F3696 /* ConsumerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumerService.swift; sourceTree = "<group>"; };
 		B95E2D14292822DD00EEA52D /* Solis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Solis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B95E2D17292822DD00EEA52D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B95E2D19292822DD00EEA52D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +86,10 @@
 		B95E2D562928741F00EEA52D /* AutarchicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutarchicViewController.swift; sourceTree = "<group>"; };
 		B95E2D5A2928C86700EEA52D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		B95E2D5C2928CB1100EEA52D /* CalculatorChooserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorChooserViewController.swift; sourceTree = "<group>"; };
+		B9888DFE292997910054BED7 /* AutarchicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutarchicService.swift; sourceTree = "<group>"; };
+		B9888E012929D3DF0054BED7 /* AutarchicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutarchicTableViewCell.swift; sourceTree = "<group>"; };
+		B9888E032929E00B0054BED7 /* SolarCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarCalculatorViewController.swift; sourceTree = "<group>"; };
+		B9888E052929ECA30054BED7 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		BBE78A5C3F1E55DC1B52B688 /* Pods_SolisTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SolisTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7D27F9031F77783701AAC18 /* Pods-Solis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Solis.debug.xcconfig"; path = "Target Support Files/Pods-Solis/Pods-Solis.debug.xcconfig"; sourceTree = "<group>"; };
 		F810286C9E56EF2A459DFC86 /* Pods-Solis-SolisUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Solis-SolisUITests.debug.xcconfig"; path = "Target Support Files/Pods-Solis-SolisUITests/Pods-Solis-SolisUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -199,6 +211,8 @@
 				B95E2D562928741F00EEA52D /* AutarchicViewController.swift */,
 				B95E2D5C2928CB1100EEA52D /* CalculatorChooserViewController.swift */,
 				B9063C942928FAB900227181 /* InsertoptionChooserViewController.swift */,
+				B9888E032929E00B0054BED7 /* SolarCalculatorViewController.swift */,
+				B92F597D292A0F2B000F3696 /* ConsumerCalculatorViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -224,6 +238,9 @@
 			children = (
 				B95E2D5A2928C86700EEA52D /* NetworkService.swift */,
 				B9063C982929387300227181 /* HomeService.swift */,
+				B9888DFE292997910054BED7 /* AutarchicService.swift */,
+				B9888E052929ECA30054BED7 /* LocationService.swift */,
+				B92F597F292A136F000F3696 /* ConsumerService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -233,6 +250,7 @@
 			children = (
 				B95E2D5229282E1C00EEA52D /* DashboardTableViewCell.swift */,
 				B9063C96292924B000227181 /* QuestionsCollectionViewCell.swift */,
+				B9888E012929D3DF0054BED7 /* AutarchicTableViewCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -477,18 +495,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				B95E2D1C292822DD00EEA52D /* DashboardViewController.swift in Sources */,
+				B92F5980292A136F000F3696 /* ConsumerService.swift in Sources */,
 				B95E2D18292822DD00EEA52D /* AppDelegate.swift in Sources */,
+				B9888DFF292997910054BED7 /* AutarchicService.swift in Sources */,
 				B9063C952928FAB900227181 /* InsertoptionChooserViewController.swift in Sources */,
 				B95E2D4C2928283000EEA52D /* DataViewController.swift in Sources */,
+				B9888E022929D3E00054BED7 /* AutarchicTableViewCell.swift in Sources */,
 				B95E2D572928742000EEA52D /* AutarchicViewController.swift in Sources */,
 				B95E2D5B2928C86700EEA52D /* NetworkService.swift in Sources */,
+				B9888E042929E00B0054BED7 /* SolarCalculatorViewController.swift in Sources */,
 				B95E2D4A2928282200EEA52D /* CalculatorViewController.swift in Sources */,
 				B95E2D5D2928CB1100EEA52D /* CalculatorChooserViewController.swift in Sources */,
 				B9063C992929387400227181 /* HomeService.swift in Sources */,
 				B95E2D55292855FF00EEA52D /* CustomTabBarController.swift in Sources */,
 				B95E2D1A292822DD00EEA52D /* SceneDelegate.swift in Sources */,
 				B9063C97292924B000227181 /* QuestionsCollectionViewCell.swift in Sources */,
+				B9888E062929ECA40054BED7 /* LocationService.swift in Sources */,
 				B95E2D5329282E1C00EEA52D /* DashboardTableViewCell.swift in Sources */,
+				B92F597E292A0F2B000F3696 /* ConsumerCalculatorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
