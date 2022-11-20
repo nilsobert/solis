@@ -176,6 +176,17 @@ def heatPumpRecomendation():
     mimetype='application/json')
     return response
 
+@app.route("/addDevice", methods=["POST"])
+def addDevice():
+    content = request.json
+    uid = content["uid"]
+    device = {"serialNumber": content["serialNumber"], "accessCode": content["accessCode"], "deviceType":content["deviceType"], "role": content["role"]}
+    userData[uid]["devices"].append(device)
+    response = app.response_class(response=json.dumps({}),
+    status=200,
+    mimetype='application/json')
+    return response
+
 def heatPumpCalculation(key):
     
     with open("userData.json", "r") as f:
